@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Slider de Tarjetas</title>
+  <style>
+    .card-container {
+      position: relative;
+      display: flex;
+      overflow: hidden;
+      width: 80%;
+      margin: 0 auto;
+    }
+
+    .cards {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .card {
+      width: 200px;
+      margin: 0 10px;
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    .arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      cursor: pointer;
+      font-size: 24px;
+      color: #333;
+      background-color: transparent;
+      border: none;
+      outline: none;
+    }
+
+    .arrow.left {
+      left: 10px;
+    }
+
+    .arrow.right {
+      right: 10px;
+    }
+
+    .card-container:hover .arrow {
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+
+<div class="card-container">
+  <button class="arrow left" onclick="shiftCards('left')">❮</button>
+  <div class="cards">
+    <div class="card">1</div>
+    <div class="card">2</div>
+    <div class="card">3</div>
+    <div class="card">4</div>
+    <div class="card">5</div>
+    <div class="card">6</div>
+    <!-- Agrega más tarjetas aquí según sea necesario -->
+  </div>
+  <button class="arrow right" onclick="shiftCards('right')">❯</button>
+</div>
+
+<script>
+  const cardContainer = document.querySelector('.card-container');
+  const cards = document.querySelector('.cards');
+  const cardWidth = document.querySelector('.card').offsetWidth;
+  let intervalId;
+
+  function updateSlider() {
+    const cardCount = document.querySelectorAll('.card').length;
+    const cardsToShow = 4;
+
+    if (cardCount > cardsToShow) {
+      cards.style.transition = "transform 0.5s ease-in-out";
+      cards.style.transform = "translateX(-" + cardWidth * (cardCount - cardsToShow) / (cardCount - 1) + "px)";
+
+      setTimeout(() => {
+        cards.style.transition = "none";
+        cards.style.transform = "translateX(0)";
+        cards.appendChild(cards.firstElementChild);
+      }, 500);
+    }
+  }
+
+  function shiftCards(direction) {
+    const cardCount = document.querySelectorAll('.card').length;
+    const cardsToShow = 4;
+
+    if (cardCount > cardsToShow) {
+      if (direction === 'left') {
+        cards.insertBefore(cards.lastElementChild, cards.firstElementChild);
+      } else if (direction === 'right') {
+        cards.appendChild(cards.firstElementChild);
+      }
+
+      updateSlider();
+    }
+  }
+
+  function startSlider() {
+    const cardCount = document.querySelectorAll('.card').length;
+    const cardsToShow = 4;
+
+    if (cardCount > cardsToShow) {
+      intervalId = setInterval(() => shiftCards('right'), 3000);
+    }
+  }
+
+  function stopSlider() {
+    clearInterval(intervalId);
+  }
+
+  cardContainer.addEventListener("mouseover", stopSlider);
+  cardContainer.addEventListener("mouseout", startSlider);
+
+  startSlider(); // Iniciar el slider cuando se carga la página
+</script>
+
+</body>
+</html>

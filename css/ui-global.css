@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+:root {
+  --color-white: #fff;
+  --color-black: #030303;
+  --color-navy-dark: #032744;
+  --color-navy-main: #003057;
+  --color-navy-light: #4a739d;
+  --color-navy-light-x: #becddc;
+  --color-pink-dark: #c8367e;
+  --color-pink-main: #ff8cc5;
+  --color-pink-light: #ffc6e3;
+  --color-pink-light-x: #fee4f1;
+  --color-blue-dark: #0318a5;
+  --color-blue-main: #203ae9;
+  --color-blue-light: #7893ff;
+  --color-blue-light-x: #dbe9ff;
+  --color-stone-dark: #cbc5be;
+  --color-stone-main: #eae8e5;
+  --color-stone-light: #fbfbfb;
+  /* OTHERS */
+  --color-sky-blue: #0f9eda;
+  --color-blue-main-x: #1e43e7;
+  --color-section-grey: #ebebea;
+}
+*,
+::before ::after {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Titillium Web", sans-serif;
+  line-height: 1.5;
+  font-size: 16px;
+}
+img {
+  height: auto;
+  max-width: 100%;
+  margin: 0;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 1.5rem;
+}
+h5 {
+  font-size: 1.25rem;
+}
+h6 {
+  font-size: 1.125rem;
+}
+.btn {
+  border-radius: 150px;
+  padding: 8px 48px;
+}
+.btn-blue-main {
+  background-color: var(--color-blue-main);
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+.btn-blue-main:hover {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+.bg-navy-main {
+  background-color: var(--color-navy-main);
+}
+.bg-blue-main {
+  background-color: var(--color-blue-main);
+}
+.bg-blue-main-x {
+  background-color: var(--color-blue-main-x);
+}
+.bg-pink-main {
+  background-color: var(--color-pink-main);
+}
+.bg-sky-blue {
+  background-color: var(--color-sky-blue);
+}
+
+@media only screen and (max-width: 767px) {
+  /* Estilos para dispositivos móviles */
+}
+@media only screen and (min-width: 768px){
+  /* Estilos para tabletas en modo retrato */
+}
+@media only screen and (min-width: 992px){
+  /* Estilos para tabletas en modo paisaje */
+}
+@media only screen and (min-width: 1200px){
+  /* Estilos para laptops y dispositivos de pantalla mediana */
+}
+@media only screen and (min-width: 1600px) {
+  /* Estilos para pantallas grandes (escritorio) */
+}

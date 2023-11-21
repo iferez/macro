@@ -1,0 +1,12 @@
+header, footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    padding: 12px 0; 
+    background-color: var(--color-navy-main);
+}
+
+header img, footer img{
+    max-height: 38px;
+}

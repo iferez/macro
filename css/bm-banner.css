@@ -1,0 +1,49 @@
+#bm-banner {
+  background-color: var(--color-section-grey);
+  padding: 2rem;
+}
+/* CONTENT TITLE - CTA */
+.bm-banner-first {
+  color: var(--color-navy-main);
+  padding: 0 1rem;
+}
+.bm-banner-first h1 {
+  font-size: 4rem;
+}
+.bm-banner-first h2 {
+  font-size: 3.75rem;
+}
+.bm-banner-first h4 {
+  font-size: 1.9rem;
+}
+.bm-banner-first button {
+  margin-top: 2rem;
+  font-size: 2rem;
+  padding: 0.8rem 5rem;
+}
+/* CONTENT IMAGE */
+.bm-banner-second {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+.bm-banner-second img {
+  max-height: 450px;
+  max-width: 450px;
+}
+.bm-pild-social {
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 150px;
+  padding: 1.2rem 2rem;
+  box-shadow: 0px 4px 15px 0px #0808083c;
+  -webkit-box-shadow: 1px 4px 14px 0px #0808083c;
+  -moz-box-shadow: 1px 4px 14px 0px #0808083c;
+}
+.bm-pild-social img {
+  max-width: 100%;
+  text-align: center;
+}
