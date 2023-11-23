@@ -54,9 +54,8 @@
   padding-top: 1rem;
 }
 
-
 /* SLIDER PASOS */
-#bm-steps{
+#bm-steps {
   background-color: var(--color-section-grey);
   padding: 2rem 0;
 }
@@ -101,5 +100,19 @@
   .vista-horizontal img {
     padding-top: 0;
     padding-left: 1.5rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+.bm-cards-bg-shape {
+  background-image: url(../img/circular-left-shape.svg);
+  background-repeat: no-repeat;
+  background-size: inherit;
+  background-position: left 0 top 90px;
+}
+
+}
+@media only screen and (min-width: 1400px) {
+  .bm-cards-bg-shape {
+    background-position: left 0 top 90px;
   }
 }
