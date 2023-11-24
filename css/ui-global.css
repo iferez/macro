@@ -134,6 +134,27 @@ a {
   font-weight: 600;
 }
 
+/* SCROLL BTN */
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  background-color: var(--color-pink-main);
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 4px 16px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top.show {
+  display: block;
+}
+
 @media only screen and (max-width: 767px) {
   /* Estilos para dispositivos móviles */
 }
@@ -166,5 +187,8 @@ a {
 @media only screen and (min-width: 1400px) {
 }
 @media only screen and (min-width: 1600px) {
-  /* Estilos para pantallas grandes (escritorio) */
+  .scroll-to-top {
+    bottom: 40px;
+    right: 60px;
+  }
 }

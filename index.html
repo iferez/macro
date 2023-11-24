@@ -325,6 +325,7 @@
             </section>
         </div>
 
+        <button class="scroll-to-top" onclick="scrollToTop()">&#8593;</button>
     </main>
     <footer>
         <img src="img/logo-blanco-sin-claim.svg" alt="Logo Banco Macro">
@@ -341,6 +342,21 @@
     <!-- Animaciones CSS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
+
+    <script>
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        window.onscroll = function () {
+            var button = document.querySelector('.scroll-to-top');
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                button.classList.add('show');
+            } else {
+                button.classList.remove('show');
+            }
+        };
+    </script>
 
 </body>
 
