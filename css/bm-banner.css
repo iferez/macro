@@ -28,8 +28,6 @@
 }
 .bm-banner-first button {
   margin-top: 1.2rem;
-  font-size: 1rem;
-  padding: 0.6rem 3rem;
 }
 /* CONTENT IMAGE */
 .bm-banner-second {
@@ -82,6 +80,30 @@
  */
 
 @media only screen and (min-width: 768px) {
+  .bm-banner-first h1 {
+    font-size: 2rem;
+  }
+  .bm-banner-first h2 {
+    font-size: 2rem;
+  }
+  .bm-banner-first h4 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .bm-banner-bg-shape {
+    background-image: url(../img/circular-diagonal-shape-800.svg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: bottom 20% right -300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+  }
   .bm-banner-first {
     text-align: start;
   }
@@ -98,8 +120,6 @@
   }
   .bm-banner-first button {
     margin-top: 2rem;
-    font-size: 1.5rem;
-    padding: 12px 32px;
   }
   .bm-pild-social {
     padding: 1.2rem 2rem;
@@ -110,21 +130,6 @@
   .bm-banner-second img {
     max-height: 350px;
     max-width: 350px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .bm-banner-bg-shape {
-    background-image: url(../img/circular-diagonal-shape-800.svg);
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: bottom 20% right -300px;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
   }
 }
 @media only screen and (min-width: 1400px) {

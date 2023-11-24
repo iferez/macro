@@ -2,11 +2,15 @@ document.addEventListener("DOMContentLoaded", function () {
   function verifyAndActivateSliders() {
     /* Verifico si se debe activar - envio el ID del html y cuantos elementos tiene que haber para armar el slider */
     var promoSliderOn = verifySlider("slider-promo", 5);
-    var stepsSliderOn = verifySlider("slider-steps", 5);
+    var pasosSliderOn = verifySlider("slider-pasos", 5);
+    var productosSliderOn = verifySlider("slider-productos", 5);
+    var gestionSliderOn = verifySlider("slider-gestion", 5);
 
     /* Armo o desarmo el slider - envio ID - validacion - elementos a mostrar */
     toggleSlider("slider-promo", promoSliderOn);
-    toggleSlider("slider-steps", stepsSliderOn);
+    toggleSlider("slider-pasos", pasosSliderOn);
+    toggleSlider("slider-productos", productosSliderOn);
+    toggleSlider("slider-gestion", gestionSliderOn);
   }
 
   function verifySlider(sliderId, slidesToShow) {
