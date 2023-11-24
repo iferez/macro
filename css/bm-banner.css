@@ -1,6 +1,6 @@
 #bm-banner {
   background-color: var(--color-section-grey);
-  padding: 2rem;
+  /* padding: 1rem; */
   position: relative;
 }
 
@@ -11,15 +11,17 @@
 
 /* CONTENT TITLE - CTA */
 .bm-banner-first {
-  color: var(--color-navy-main);
   padding: 1rem 1rem;
   text-align: center;
 }
 .bm-banner-first h1 {
+  color: var(--color-navy-main);
   font-size: 2rem;
 }
 .bm-banner-first h2 {
   font-size: 1.75rem;
+  line-height: 40px;
+  margin-bottom: 16px; /* NAHUE */
 }
 .bm-banner-first h4 {
   font-size: 1.2rem;
@@ -84,20 +86,21 @@
     text-align: start;
   }
   .bm-banner-first h1 {
-    font-size: 4rem;
+    font-size: 3.125rem;
   }
   .bm-banner-first h2 {
-    font-size: 3.75rem;
+    font-size: 3.125rem;
+    margin-bottom: 16px;
+    line-height: 80px;
   }
   .bm-banner-first h4 {
-    font-size: 1.9rem;
+    font-size: 2rem;
   }
   .bm-banner-first button {
     margin-top: 2rem;
-    font-size: 2rem;
-    padding: 0.8rem 5rem;
+    font-size: 1.5rem;
+    padding: 12px 32px;
   }
-
   .bm-pild-social {
     padding: 1.2rem 2rem;
   }

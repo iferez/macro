@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   /* Colores BRAND */
   --color-white: #fff;
@@ -35,6 +36,7 @@
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  overflow-x: hidden;
 }
 body {
   margin: 0;
@@ -68,8 +70,19 @@ h6 {
   font-size: 1.125rem;
 }
 .btn {
+  font-family: "Public Sans", sans-serif;
   border-radius: 150px;
-  padding: 8px 48px;
+  padding: 12px 24px;
+}
+.btn-navy-main {
+  background-color: var(--color-navy-main);
+  color: var(--color-white);
+  transition: 0.3s ease;
+}
+.btn-navy-main:hover {
+  background-color: var(--color-navy-dark);
+  color: var(--color-white);
+  transition: 0.3s ease;
 }
 .btn-blue-main {
   background-color: var(--color-blue-main);
@@ -100,16 +113,16 @@ h6 {
 @media only screen and (max-width: 767px) {
   /* Estilos para dispositivos móviles */
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 768px) {
   /* Estilos para tabletas en modo retrato */
 }
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
   /* Estilos para tabletas en modo paisaje */
 }
-@media only screen and (min-width: 1200px){
+@media only screen and (min-width: 1200px) {
   /* Estilos para laptops y dispositivos de pantalla mediana */
 }
-@media only screen and (min-width: 1400px){
+@media only screen and (min-width: 1400px) {
 }
 @media only screen and (min-width: 1600px) {
   /* Estilos para pantallas grandes (escritorio) */

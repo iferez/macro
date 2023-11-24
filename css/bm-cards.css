@@ -1,4 +1,12 @@
 /* SLIDER PROMOCIONES */
+.wrapper-cards-center {
+  display: flex;
+  justify-content: center;
+}
+.wrapper-cards-evenly {
+  display: flex;
+  justify-content: space-evenly;
+}
 .wrapper-cards-between {
   display: flex;
   justify-content: space-between;
@@ -25,7 +33,60 @@
 .convert-slider .bm-card-promo {
   margin: 0.5rem 2rem 1rem 2rem;
 }
+.convert-slider .bm-card-md {
+  margin: 0.5rem 2rem 1rem 2rem;
+  display: flex !important;
+}
 
+/* NUEVAS CARDS NAHUE */
+.bm-card-md {
+  display: flex;
+  flex-direction: column;
+  width: 230px;
+  height: 100%;
+  min-height: 250px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0px 6px 10px 4px #7a7a7a26;
+}
+.bm-card-md h5 {
+  font-size: 24px;
+  padding-bottom: 16px;
+}
+.bm-card-md span {
+  font-size: 40px;
+  font-weight: 700;
+}
+.bm-card-md_header {
+  border-radius: 12px 12px 0px 0px;
+}
+.bm-card-md_header *,
+.bm-card-md_body * {
+  margin: 0;
+}
+.bm-card-md_header,
+.bm-card-md_body {
+  padding-top: 16px;
+  flex-grow: 1;
+}
+.bm-card-md_footer {
+  flex-grow: 1;
+  min-height: 66px;
+  max-height: 66px; /* NAHUE VER SI SE HACEN MAS GRANDES */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
+  background-color: var(--color-navy-main);
+  color: #fff;
+  border-radius: 0px 0px 12px 12px;
+}
+.bm-card-md_footer span {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1rem;
+  text-align: start;
+}
 /* CARDS AHORRO */
 .bm-card-ahorro {
   display: flex;
@@ -103,13 +164,12 @@
   }
 }
 @media only screen and (min-width: 1200px) {
-.bm-cards-bg-shape {
-  background-image: url(../img/circular-left-shape.svg);
-  background-repeat: no-repeat;
-  background-size: inherit;
-  background-position: left 0 top 90px;
-}
-
+  .bm-cards-bg-shape {
+    background-image: url(../img/circular-left-shape.svg);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: left 0 top 90px;
+  }
 }
 @media only screen and (min-width: 1400px) {
   .bm-cards-bg-shape {
