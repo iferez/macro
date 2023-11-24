@@ -133,6 +133,7 @@ a {
   color: var(--color-navy-main);
   font-weight: 600;
 }
+
 @media only screen and (max-width: 767px) {
   /* Estilos para dispositivos móviles */
 }
