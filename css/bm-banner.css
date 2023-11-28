@@ -79,6 +79,9 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  #bm-banner {
+    padding-bottom: 32px;
+  }
   .bm-banner-bg-shape {
     background-image: url(../img/circular-diagonal-shape-800.svg);
     background-repeat: no-repeat;
@@ -121,7 +124,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .bm-banner-second img {
-    max-width: 450px;
+    max-width: 330px;
   }
 }
 @media only screen and (min-width: 1600px) {
