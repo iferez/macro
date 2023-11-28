@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var productosSliderOn = verifySlider("slider-productos", 5);
     var gestionSliderOn = verifySlider("slider-gestion", 5);
 
-    /* Armo o desarmo el slider - envio ID - validacion - elementos a mostrar */
+    /* Armo o desarmo el slider - envio ID + validacion  */
     toggleSlider("slider-promo", promoSliderOn);
     toggleSlider("slider-pasos", pasosSliderOn);
     toggleSlider("slider-productos", productosSliderOn);

@@ -14,34 +14,8 @@
   display: flex;
   justify-content: space-between;
 }
-.bm-card-promo {
-  width: 220px;
-  height: 100%;
-  min-height: 226px;
-  text-align: center;
-  padding: 0.6rem 1rem;
-  border-radius: 25px;
-  background-color: #fff;
-  box-shadow: 6px 6px 15px 0px #0808083c;
-}
-.bm-card-promo h5 {
-  font-size: 1.6rem;
-  font-weight: 600;
-}
-.bm-card-promo span {
-  font-size: 3.5rem;
-}
 
-/* SLIDER ACTIVO */
-.convert-slider .bm-card-promo {
-  margin: 0.5rem 2rem 1rem 2rem;
-}
-.convert-slider .bm-card-md {
-  margin: 0.5rem 2rem 1rem 2rem;
-  display: flex !important;
-}
-
-/* NUEVAS CARDS NAHUE */
+/* CARDS MEDIANAS HEAD - BODY - FOOTER */
 .bm-card-md {
   display: flex;
   flex-direction: column;
@@ -64,10 +38,6 @@
 .bm-card-md_header {
   border-radius: 12px 12px 0px 0px;
 }
-/* .bm-card-md_header *,
-.bm-card-md_body * {
-  margin: 0;
-} */
 .bm-card-md_header,
 .bm-card-md_body {
   padding-top: 16px;
@@ -99,11 +69,17 @@
   text-align: start;
 }
 
+/* SLIDER ACTIVO */
+.convert-slider .bm-card-md {
+  margin: 0.5rem 2rem 1rem 2rem;
+  display: flex !important;
+}
+
 #bm-ahorro {
   padding: 3rem 0;
 }
 /* CARDS AHORRO */
-.bm-card-ahorro {
+.bm-module-info {
   display: flex;
   flex-direction: column;
   color: #fff;
@@ -112,26 +88,25 @@
   border-radius: 25px;
   box-shadow: 6px 6px 15px 0px #0808083c;
 }
-.bm-card-ahorro h4 {
+.bm-module-info h4 {
   font-size: 1.5rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #fff;
 }
-.bm-card-ahorro p {
+.bm-module-info p {
   font-size: 1.25rem;
   padding-top: 1rem;
 }
-.bm-card-ahorro img {
+.bm-module-info img {
   padding-top: 1.5rem;
 }
-.bm-card-ahorro [src]:last-child,
-.bm-card-ahorro a:last-child {
+.bm-module-info [src]:last-child,
+.bm-module-info a:last-child {
   margin-top: auto;
   padding-top: 1rem;
 }
 
 #bm-pasos {
-  /* background-color: var(--color-section-grey); */
   padding: 3rem 0;
 }
 .bm-card-step {
@@ -242,10 +217,10 @@
     background-size: inherit;
     background-position: right -100px top 0px;
   }
-  .bm-card-ahorro h4 {
+  .bm-module-info h4 {
     font-size: 2rem;
   }
-  .bm-card-ahorro p {
+  .bm-module-info p {
     font-size: 1.5rem;
   }
 }
