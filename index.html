@@ -14,7 +14,10 @@
 
 <body>
     <header>
-        <img src="img/logo-blanco-sin-claim.svg" alt="Logo Banco Macro">
+        <div class="container-header">
+            <img src="img/logo-blanco-sin-claim.svg" alt="Logo Banco Macro">
+            <a href="#" class="btn btn-navy-main-outline">Pedí tu cuenta ahora</a>
+        </div>
     </header>
     <main>
         <section id="bm-banner">
@@ -42,7 +45,7 @@
         <div class="bm-bg-shape_left">
             <section id="bm-promo">
                 <div class="container-lg">
-                    <h3 class="text-center mb-6" data-aos="zoom-out-down">Y accedé a todos nuestros ahorros y
+                    <h3 class="text-center mb-6" data-aos="fade-up-right">Y accedé a todos nuestros ahorros y
                         promociones</h3>
                     <article id="slider-promo" class="wrapper-cards-between">
                         <div class="bm-card-md" data-aos="fade-up-right">
@@ -68,7 +71,7 @@
                                 <h5>Hasta <br><span>30%</span><br> de Ahorro <br>mensual en</h5>
                             </div>
                             <div class="bm-card-md_footer">
-                                <span>LOGO</span>
+                                <span><img src="img/icon_BaresYCerveceria.svg" alt="Icono Bares y cervecerias"></span>
                                 <span>Bares y <br> cervecerias</span>
                             </div>
                         </div>
@@ -78,7 +81,7 @@
                                 <h5>Hasta <br><span>20%</span><br> de Ahorro <br>mensual en</h5>
                             </div>
                             <div class="bm-card-md_footer">
-                                <span>LOGO</span>
+                                <span><img src="img/icon_gastronomia.svg" alt="Icono gastronomia"></span>
                                 <span>Gastronomía</span>
                             </div>
                         </div>
@@ -130,9 +133,9 @@
         </div>
 
         <section id="bm-pasos">
-            <div class="container-xl">
-                <h3 class="text-center mb-6" data-aos="zoom-out-down">Sumarte a Macro es muy fácil</h3>
-                <article id="slider-pasos" class="wrapper-cards-between" data-aos="fade-up">
+            <div class="container-xl" data-aos="fade-up">
+                <h3 class="text-center mb-6">Sumarte a Macro es muy fácil</h3>
+                <article id="slider-pasos" class="wrapper-cards-between">
                     <div class="bm-card-sm">
                         <div class="bm-card-sm_header">
                             <img src="img/Card.svg" alt="Definir img">
@@ -178,7 +181,7 @@
 
         <section id="bm-productos">
             <div class="container-lg">
-                <h3 class="text-center mb-6" data-aos="zoom-out-down">También te pueden interesar estos productos</h3>
+                <h3 class="text-center mb-6" data-aos="fade-right">También te pueden interesar estos productos</h3>
                 <article id="slider-productos" class="wrapper-cards-between">
                     <div class="bm-card-md" data-aos="fade-right" data-aos-delay="300">
                         <div class="bm-card-md_header">
@@ -230,10 +233,10 @@
         <div class="bm-bg-shape_right">
             <section id="bm-gestion">
                 <div class="container-xl">
-                    <h2 class="text-center mb-5" data-aos="zoom-out-down">¿Qué necesitas hacer?</h2>
-                    <h3 class="text-center mb-6" data-aos="zoom-out-down">Gestiona tu día a día más rápido y fácil de
+                    <h2 class="text-center mb-5">¿Qué necesitas hacer?</h2>
+                    <h3 class="text-center mb-6">Gestiona tu día a día más rápido y fácil de
                         forma online</h3>
-                    <article id="slider-gestion" class="wrapper-cards-between" data-aos="fade-up">
+                    <article id="slider-gestion" class="wrapper-cards-between">
                         <div class="bm-card-sm bm-card-navy">
                             <div class="bm-card-sm_body">
                                 <a href="#">¿Necesitás desbloquear la clave de tu tarjeta de débito?</a>
@@ -258,14 +261,14 @@
                             </div>
                         </div>
                     </article>
-                    <div class="text-center" data-aos="fade-up">
+                    <div class="text-center">
                         <a href="#" class="btn btn-lg btn-navy-main mt-5 mb-3">Ver más contenidos</a>
                     </div>
                 </div>
             </section>
 
             <section id="bm-preguntas">
-                <div class="container" data-aos="fade-right" data-aos-delay="100">
+                <div class="container">
                     <h3 class="mb-6">Preguntas frecuentes</h3>
                     <article class="accordion" id="accordion-preguntas">
                         <div class="accordion-item">
@@ -342,21 +345,8 @@
     <!-- Animaciones CSS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
-
-    <script>
-        function scrollToTop() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
-        window.onscroll = function () {
-            var button = document.querySelector('.scroll-to-top');
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                button.classList.add('show');
-            } else {
-                button.classList.remove('show');
-            }
-        };
-    </script>
+    <!-- SCROLL FIXED HEADER -->
+    <script src="js/scroll-fix.js"></script>
 
 </body>
 

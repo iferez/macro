@@ -1,12 +1,40 @@
-header, footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    padding: 12px 0; 
-    background-color: var(--color-navy-main);
+header,
+footer {
+  height: 70px;
+  padding: 12px 0;
+  background-color: var(--color-navy-main);
+  z-index: 99;
 }
 
-header img, footer img{
-    max-height: 38px;
+header .container-header,
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img,
+footer img {
+  max-height: 38px;
+}
+
+header .container-header a {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .fixed-btn {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .fixed-btn a {
+    display: block !important;
+  }
+
+  .fixed-btn .container-header {
+    justify-content: space-between;
+  }
 }

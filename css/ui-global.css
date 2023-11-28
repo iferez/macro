@@ -97,6 +97,26 @@ h6 {
   color: var(--color-white);
   transition: 0.3s ease;
 }
+.btn-navy-main:focus-visible {
+  background-color: var(--color-navy-dark);
+  color: var(--color-white);
+}
+.btn-navy-main:active {
+  background-color: var(--color-white);
+  color: var(--color-navy-main);
+  border: 1px solid var(--color-navy-main);
+}
+.btn-navy-main-outline {
+  background-color: var(--color-white);
+  color: var(--color-navy-main);
+  border: 1px solid var(--color-navy-main);
+}
+.btn-navy-main-outline:hover {
+  background-color: var(--color-white);
+  color: var(--color-navy-main);
+  border: 1px solid var(--color-white);
+  font-weight: 500;
+}
 .btn-blue-main {
   background-color: var(--color-blue-main);
   color: var(--color-white);
