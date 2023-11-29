@@ -8,7 +8,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("../img/banner_arco_dk1980.svg");
+  background-image: url("../img/banner_arco_dk1980.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -83,10 +83,10 @@
     padding-bottom: 32px;
   }
   .bm-banner-bg-shape {
-    background-image: url(../img/circular-diagonal-shape-800.svg);
+    background-image: url(../img/circular-diagonal-shape-800.png);
     background-repeat: no-repeat;
     background-size: inherit;
-    background-position: bottom 20% right -300px;
+    background-position: bottom 0% right -300px;
     position: absolute;
     top: 0;
     right: 0;
@@ -129,7 +129,7 @@
 }
 @media only screen and (min-width: 1600px) {
   .bm-banner-bg-shape {
-    background-position: bottom 20% right -100px;
+    background-position: bottom 0% right -100px;
   }
 }
 @media only screen and (min-width: 2200px) {

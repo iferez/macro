@@ -216,13 +216,13 @@
 }
 @media only screen and (min-width: 1200px) {
   .bm-bg-shape_left {
-    background-image: url(../img/circular-left-shape.svg);
+    background-image: url(../img/circular-left-shape.png);
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: left -50px top 90px;
   }
   .bm-bg-shape_right {
-    background-image: url(../img/circular-right-shape.svg);
+    background-image: url(../img/circular-right-shape.png);
     background-repeat: no-repeat;
     background-size: inherit;
     background-position: right -100px top 0px;
@@ -236,7 +236,7 @@
 }
 @media only screen and (min-width: 1400px) {
   .bm-bg-shape_left {
-    background-position: left 0 top 90px;
+    background-position: left -10px top 90px;
   }
   .bm-bg-shape_right {
     background-position: right -10px top 0px;
