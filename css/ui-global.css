@@ -169,7 +169,7 @@ a {
 .scroll-to-top {
   display: none;
   position: fixed;
-  bottom: 10px;
+  bottom: 80px;
   right: 10px;
   background-color: var(--color-pink-main);
   font-size: 18px;

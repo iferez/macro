@@ -36,7 +36,7 @@ header .container-header a {
 .fixed-btn {
   position: fixed;
   display: flex;
-  top: 0;
+  bottom: 0;
   width: 100%;
   justify-content: space-evenly;
 }
@@ -61,6 +61,8 @@ header .container-header a {
   }
   .fixed-btn {
     height: 80px;
+    top: 0;
+    bottom: none;
   }
   .fixed-btn .btn-navy-main-outline {
     font-size: 14px;
