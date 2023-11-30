@@ -15,10 +15,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function verifySlider(sliderId, slidesToShow) {
     var sliderWrapper = document.getElementById(sliderId);
+    var children = Array.from(sliderWrapper.childNodes).filter(node => node.nodeType === 1);
     return (
-      sliderWrapper.children.length >= slidesToShow || window.innerWidth < 996
+        children.length >= slidesToShow || window.innerWidth < 996
     );
-  }
+}
+
 
   function toggleSlider(sliderId, shouldActivate) {
     var sliderWrapper = document.getElementById(sliderId);
