@@ -15,6 +15,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function verifySlider(sliderId, slidesToShow) {
     var sliderWrapper = document.getElementById(sliderId);
+    if (!sliderWrapper) {
+      return false;
+    }
+    
     var children = Array.from(sliderWrapper.childNodes).filter(node => node.nodeType === 1);
     return (
         children.length >= slidesToShow || window.innerWidth < 996
@@ -24,6 +28,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
   function toggleSlider(sliderId, shouldActivate) {
     var sliderWrapper = document.getElementById(sliderId);
+    if (!sliderWrapper) {
+      return false;
+    }
 
     if (shouldActivate) {
       sliderWrapper.classList.add("convert-slider");
