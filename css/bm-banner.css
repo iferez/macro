@@ -26,6 +26,7 @@
 .bm-banner-first h1 {
   color: var(--color-navy-main);
   font-size: 2rem;
+  margin-bottom: 16px;
 }
 .bm-banner-first h2 {
   font-size: 1.75rem;
@@ -66,6 +67,21 @@
   text-align: center;
 }
 
+/* ARTICLE DE INFORMACIÓN - REDIRECT */
+.article-info {
+  font-family: "Public Sans", sans-serif;
+  text-align: center;
+  font-weight: 600;
+  background-color: #eff1f1;
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+.article-info p {
+  margin: 0;
+}
+.article-info a {
+  font-weight: 700;
+}
 @media only screen and (min-width: 768px) {
   .bm-banner-first h1 {
     font-size: 2rem;

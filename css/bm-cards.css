@@ -197,6 +197,44 @@
   transition: 0.3s ease;
 }
 
+#bm-tarjetas {
+  padding: 2rem 0;
+  margin-top: 3rem;
+}
+
+/* CARD HORIZONTAL - IMAGEN - TEXTO - BOTON */
+.bm-card-horizontal{
+  display: flex;
+  max-width: 540px;
+  font-family: "Public Sans", sans-serif;
+  background-color: var(--color-white);
+  height: 100%;
+}
+.bm-card-horizontal.border-card{
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+.bm-card-horizontal img{
+  height: fit-content;
+  margin: 1rem 0;
+  max-height: 120px;
+}
+.bm-card-horizontal h4{
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.bm-card-horizontal h6{
+  margin-bottom: 1rem;
+}
+.bm-card-horizontal .bm-card-horizontal_info button{
+  margin: 0;
+}
+.bm-card-horizontal.border-card{
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+
 @media only screen and (min-width: 992px) {
   /* CARD HORIZONTAL */
   .vista-horizontal {
@@ -212,6 +250,17 @@
   .vista-horizontal img {
     padding-top: 0;
     padding-left: 1.5rem;
+  }
+  .bm-card-horizontal.border-card{
+    padding: 1.5rem 2rem;
+    text-align: start;
+  }
+  .bm-card-horizontal img{
+    margin: 0;
+    max-height: 200px;
+  }
+  .bm-card-horizontal .bm-card-horizontal_info{
+    margin-left: 1.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
